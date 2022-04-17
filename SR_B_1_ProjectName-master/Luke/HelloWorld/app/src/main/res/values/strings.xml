@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="edit_message">Enter a Message</string>
+    <string name="button_send">Send</string>
+    <string name="buttonTwo_send">Send2</string>
+    <string name="buttonOnD2_send">Send3</string>
+    <string name="buttonOnD3_send">Home</string>
+</resources>

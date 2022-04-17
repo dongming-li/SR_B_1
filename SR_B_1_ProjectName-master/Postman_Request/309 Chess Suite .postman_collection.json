@@ -1,0 +1,1614 @@
+{
+	"info": {
+		"name": "309 Chess Suite ",
+		"_postman_id": "d0b5f081-0646-0b23-6670-57cf2e6730b5",
+		"description": "These are the general routes for our REST api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						""
+					]
+				},
+				"description": "Should return error equal to true and the message should be The cake is a lie."
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Will return all of the users currently in the database."
+			},
+			"response": [
+				{
+					"id": "e79de647-c25b-4314-86c1-49230187db22",
+					"name": "All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8008/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2823",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:17:58 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b07-coIFg8Ck8u1XjouZmOEJuS8STk0\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 29,
+					"body": "{\"error\":false,\"data\":[{\"username\":\"Alpha\",\"password\":\"8480e1340e8a8add301c2fca44727eae\",\"email\":\"alpha@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:47:19.000Z\",\"updated_at\":\"2017-11-03T02:47:19.000Z\",\"salt\":\"9JPX3HekOpiwCqwr\"},{\"username\":\"Bravo\",\"password\":\"8ea68a64d2a70ed474f4856c6418d887\",\"email\":\"bravo@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:47:49.000Z\",\"updated_at\":\"2017-11-03T02:47:49.000Z\",\"salt\":\"AMKfhsfrfPiq7mm5\"},{\"username\":\"The_Bagel_Wizard\",\"password\":\"97f0ab441608c31fb6c656419e63c68e\",\"email\":\"colton@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:48:18.000Z\",\"updated_at\":\"2017-11-03T02:48:18.000Z\",\"salt\":\"jst3GzQnrnhfLYfC\"},{\"username\":\"Alcalhrad\",\"password\":\"75165946357504944bbe11183d05461f\",\"email\":\"alec@gmail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:48:49.000Z\",\"updated_at\":\"2017-11-03T02:48:49.000Z\",\"salt\":\"eFRp4Z0DcDtOQinE\"},{\"username\":\"LukeH7\",\"password\":\"a849ba97d0d0fffe2a137f62bf70467e\",\"email\":\"luke@yahoo.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:49:25.000Z\",\"updated_at\":\"2017-11-03T02:49:25.000Z\",\"salt\":\"mVrQcHvuKAzvLVnw\"},{\"username\":\"Abdul2048\",\"password\":\"b3c80c7e0cd10ee2637b9e087f930990\",\"email\":\"abdul@iastate.edu\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:52:04.000Z\",\"updated_at\":\"2017-11-03T02:52:04.000Z\",\"salt\":\"gXtLYrncGY1LTe6X\"},{\"username\":\"FunGuy\",\"password\":\"0282d8dcfc8cc94bf6622f4d6359a17a\",\"email\":\"random@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T07:08:56.000Z\",\"updated_at\":\"2017-11-03T07:08:56.000Z\",\"salt\":\"Mv4xKJ9o6otZ8BD7\"},{\"username\":\"Bad\",\"password\":\"b7ef18c5202d98d8ed16918bf82b042f\",\"email\":\"randm@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T07:15:28.000Z\",\"updated_at\":\"2017-11-03T07:15:28.000Z\",\"salt\":\"hLwxbici136a2VeF\"},{\"username\":\"aklsdjf\",\"password\":\"fe2fb5cb22022d384e5dc9bffac37859\",\"email\":\"radkjlfaisjdfij@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T07:31:26.000Z\",\"updated_at\":\"2017-11-03T07:31:26.000Z\",\"salt\":\"OsreoAEbaaovcjY0\"},{\"username\":\"dkjfikjv\",\"password\":\"c8ff3f7cab3eef5d827baa1069b25819\",\"email\":\"radkjlfaisjdfij@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T07:31:39.000Z\",\"updated_at\":\"2017-11-03T07:31:39.000Z\",\"salt\":\"VVlhe7uWl4d4DAwl\"},{\"username\":\"The_Bagel_Wizard2\",\"password\":\"939b07899111024a9d0e9e73b7de0939\",\"email\":\"colton2@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T07:36:29.000Z\",\"updated_at\":\"2017-11-03T07:36:29.000Z\",\"salt\":\"hypRL1fTc798kYrF\"}],\"message\":\"Users.\"}"
+				}
+			]
+		},
+		{
+			"name": "Get Single User (username)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/user/username/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"user",
+						"username",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"description": "To use replace <:id> with the username of the desired account. See example for implementation."
+			},
+			"response": [
+				{
+					"id": "4226a4c7-f451-4d4e-b706-1decd8f70d9b",
+					"name": "Bravo Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8008/user/username/Bravo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"user",
+								"username",
+								"Bravo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "292",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:11:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"124-qN0tI1gbUDRRI9+XRj9vzga+cUc\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 17,
+					"body": "{\"error\":false,\"data\":{\"username\":\"Bravo\",\"password\":\"8ea68a64d2a70ed474f4856c6418d887\",\"email\":\"bravo@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:47:49.000Z\",\"updated_at\":\"2017-11-03T02:47:49.000Z\",\"salt\":\"AMKfhsfrfPiq7mm5\"},\"message\":\"User found\"}"
+				}
+			]
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "TheWizard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mail@mail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "5432",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8008/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"user"
+					]
+				},
+				"description": "Replace the value fields with the desired account info. See exammple for sample return."
+			},
+			"response": [
+				{
+					"id": "a119a93c-b559-42c5-8d74-feb152268033",
+					"name": "Create User Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ExampleUser",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "example@mail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "example",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8008/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:25:11 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bc-2JG67WwwdXwdaNdb5XH0xsouOic\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 48,
+					"body": "{\"error\":false,\"data\":{\"fieldCount\":0,\"affectedRows\":1,\"insertId\":0,\"serverStatus\":2,\"warningCount\":0,\"message\":\"\",\"protocol41\":true,\"changedRows\":0},\"message\":\"New user has been created\"}"
+				}
+			]
+		},
+		{
+			"name": "Create Game",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/game/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"game",
+						"create"
+					]
+				},
+				"description": "Creates a game between two players. See example for sample body and return."
+			},
+			"response": [
+				{
+					"id": "6540d0b6-e388-499f-9a36-c5ef154c8b0e",
+					"name": "Create Game Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "player1",
+									"value": "The_Bagel_Wizard",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "player2",
+									"value": "Abdul2048",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8008/game/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"game",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:26:52 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bc-AQSzmGEKQsgwyRdYC6qILqfuKYc\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 54,
+					"body": "{\"error\":false,\"data\":{\"fieldCount\":0,\"affectedRows\":1,\"insertId\":0,\"serverStatus\":2,\"warningCount\":0,\"message\":\"\",\"protocol41\":true,\"changedRows\":0},\"message\":\"New game has been created\"}"
+				}
+			]
+		},
+		{
+			"name": "Get All User's Games",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/games/user/:username",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"games",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": ""
+						}
+					]
+				},
+				"description": "This request will return all of the intances of games that the user is in. See example for sample output."
+			},
+			"response": [
+				{
+					"id": "e63bee58-ff6d-43d2-acc5-4aeb946dfa3d",
+					"name": "Get All User's Games Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8008/games/user/Alcalhrad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"games",
+								"user",
+								"Alcalhrad"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "174",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:28:25 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ae-mpJOwK3eAdCMQUZkELBYTi0SRz0\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 38,
+					"body": "{\"error\":false,\"data\":[{\"player1\":\"The_Bagel_Wizard\",\"player2\":\"Alcalhrad\",\"game\":1509681009},{\"player1\":\"LukeH7\",\"player2\":\"Alcalhrad\",\"game\":1509685455}],\"message\":\"Games\"}"
+				}
+			]
+		},
+		{
+			"name": "Get All Games",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"games"
+					]
+				},
+				"description": "Returns all of the instance of games that are currently happening. See example for sample output."
+			},
+			"response": [
+				{
+					"id": "0b5d4d8c-a781-4ef3-b32c-8d61c49fa8cc",
+					"name": "Get All Games Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8008/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"games"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:29:24 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"139-XmvLt09+RXF43HgqiSBWXCV3ndk\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 29,
+					"body": "{\"error\":false,\"data\":[{\"player1\":\"The_Bagel_Wizard\",\"player2\":\"Alcalhrad\",\"game\":1509681009},{\"player1\":\"LukeH7\",\"player2\":\"Alcalhrad\",\"game\":1509685455},{\"player1\":\"LukeH7\",\"player2\":\"The_Bagel_Wizard\",\"game\":1509685844},{\"player1\":\"The_Bagel_Wizard\",\"player2\":\"Abdul2048\",\"game\":1509697613}],\"message\":\"Games\"}"
+				}
+			]
+		},
+		{
+			"name": "Update Board",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "move",
+							"value": "f6\ng7\n",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gameID",
+							"value": "1509685844",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8008/game/board/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"game",
+						"board",
+						"update"
+					]
+				},
+				"description": "This request sends a move to the database to append it to the current game state. See example for sample return and values"
+			},
+			"response": [
+				{
+					"id": "a8db6b69-87bd-4c67-8dd3-8aa0ccdd710b",
+					"name": "Update Board Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "move",
+									"value": "a4\nb3\n",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "gameID",
+									"value": "1509685844",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8008/game/board/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"game",
+								"board",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "214",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:31:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d6-/4WtVaHFgl3LVhHZnbHbbri6BY4\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 57,
+					"body": "{\"error\":false,\"data\":{\"fieldCount\":0,\"affectedRows\":1,\"insertId\":0,\"serverStatus\":34,\"warningCount\":0,\"message\":\"(Rows matched: 1  Changed: 1  Warnings: 0\",\"protocol41\":true,\"changedRows\":1},\"messgae\":\"Move sent\"}"
+				}
+			]
+		},
+		{
+			"name": "Get Board",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/game/board/:gameID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"game",
+						"board",
+						":gameID"
+					],
+					"variable": [
+						{
+							"key": "gameID",
+							"value": ""
+						}
+					]
+				},
+				"description": "This returns the requested board state from the database. See example for sample output and values."
+			},
+			"response": [
+				{
+					"id": "1cb91454-36b4-4d40-a9e0-8d1e95a01c5c",
+					"name": "Get Board Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8008/game/board/1509685844",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"game",
+								"board",
+								"1509685844"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:32:07 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"75-Q36j6XbjF8ItGosuhHB7Mdi7PmQ\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 29,
+					"body": "{\"error\":false,\"data\":[{\"id\":1509685844,\"history\":\"f6\\ng7\\nf6\\ng7\\nf6\\ng7\\nf6\\ng7\\na4\\nb3\\n\"}],\"message\":\"Gameboard\"}"
+				}
+			]
+		},
+		{
+			"name": "Get Single User (email)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/user/email/:email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"user",
+						"email",
+						":email"
+					],
+					"variable": [
+						{
+							"key": "email",
+							"value": ""
+						}
+					]
+				},
+				"description": "Returns a single user based on email value. See example for sample output and values."
+			},
+			"response": [
+				{
+					"id": "2d7f6854-f749-40be-9f81-d1ff9020a4e2",
+					"name": "Get Single User (email) Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8008/user/email/alpha@mail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"user",
+								"email",
+								"alpha@mail.com"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "294",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:33:52 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"126-jPGYS4H/vPuhm+dW7yp1Y8hyMDE\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 32,
+					"body": "{\"error\":false,\"data\":[{\"username\":\"Alpha\",\"password\":\"8480e1340e8a8add301c2fca44727eae\",\"email\":\"alpha@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:47:19.000Z\",\"updated_at\":\"2017-11-03T02:47:19.000Z\",\"salt\":\"9JPX3HekOpiwCqwr\"}],\"message\":\"User found\"}"
+				}
+			]
+		},
+		{
+			"name": "Create Chat",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user1",
+							"value": "The_Bagel_Wizard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user2",
+							"value": "Abdul2048",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8008/chat/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"chat",
+						"create"
+					]
+				},
+				"description": "Creates a chat between two players. See example for sample output and values."
+			},
+			"response": [
+				{
+					"id": "213dae82-47f2-418e-a86c-bb2f315bad00",
+					"name": "Create Chat Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user1",
+									"value": "LukeH7",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "user2",
+									"value": "Abdul2048",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8008/chat/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"chat",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:38:56 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bc-Co8SI9NM6jF5F4fp1jO6WQ9hRGY\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 55,
+					"body": "{\"error\":false,\"data\":{\"fieldCount\":0,\"affectedRows\":1,\"insertId\":0,\"serverStatus\":2,\"warningCount\":0,\"message\":\"\",\"protocol41\":true,\"changedRows\":0},\"message\":\"New chat has been created\"}"
+				}
+			]
+		},
+		{
+			"name": "Sends Message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "chatID",
+							"value": "1509703023",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "msg",
+							"value": "Want to play a game?",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8008/chat/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"chat",
+						"send"
+					]
+				},
+				"description": "Sends message to specified chat. See example for sample output and values."
+			},
+			"response": [
+				{
+					"id": "97de1032-7cb2-4d2b-b0a8-48980cf7ba4b",
+					"name": "Sends Message Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "Abdul2048",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "msg",
+									"value": "Yes!!",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8008/chat/send",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"chat",
+								"send"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "217",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:41:34 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d9-BrFRc8uQoSwqMglbp3da7IGHqLs\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 44,
+					"body": "{\"error\":false,\"data\":{\"fieldCount\":0,\"affectedRows\":2,\"insertId\":0,\"serverStatus\":34,\"warningCount\":0,\"message\":\"(Rows matched: 2  Changed: 2  Warnings: 0\",\"protocol41\":true,\"changedRows\":2},\"messgae\":\"Message sent\"}"
+				}
+			]
+		},
+		{
+			"name": "Login Username",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "The_Bagel_Wizard",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "IluvBagels",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8008/user/login/username",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"user",
+						"login",
+						"username"
+					]
+				},
+				"description": "Validates a user based on passed in username and password. See example for sample output and values."
+			},
+			"response": [
+				{
+					"id": "df027d16-98dd-47fa-a5be-1e8b398118c2",
+					"name": "Login Username Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "The_Bagel_Wizard",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "IluvBagels",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8008/user/login/username",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"user",
+								"login",
+								"username"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:44:08 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"135-4BeZANvZhYuzCdw/lmHFPj+l1tc\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 33,
+					"body": "{\"error\":false,\"data\":{\"username\":\"The_Bagel_Wizard\",\"password\":\"97f0ab441608c31fb6c656419e63c68e\",\"email\":\"colton@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:48:18.000Z\",\"updated_at\":\"2017-11-03T02:48:18.000Z\",\"salt\":\"jst3GzQnrnhfLYfC\"},\"message\":\"Login sucessful\"}"
+				}
+			]
+		},
+		{
+			"name": "Login Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "colTon@mail.com",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "IluvBagels",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8008/user/login/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"user",
+						"login",
+						"email"
+					]
+				},
+				"description": "Validates a user based on passed in email and password. See example for sample output and values.\n"
+			},
+			"response": [
+				{
+					"id": "d9176c9e-4f10-4af6-bff6-bc75f6048606",
+					"name": "Login Email Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "colton@mail.com",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "IluvBagels",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8008/user/login/email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"user",
+								"login",
+								"email"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 08:45:20 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"135-4BeZANvZhYuzCdw/lmHFPj+l1tc\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 36,
+					"body": "{\"error\":false,\"data\":{\"username\":\"The_Bagel_Wizard\",\"password\":\"97f0ab441608c31fb6c656419e63c68e\",\"email\":\"colton@mail.com\",\"wins\":0,\"losses\":0,\"draws\":0,\"win/loss_ratio\":0,\"created_at\":\"2017-11-03T02:48:18.000Z\",\"updated_at\":\"2017-11-03T02:48:18.000Z\",\"salt\":\"jst3GzQnrnhfLYfC\"},\"message\":\"Login sucessful\"}"
+				}
+			]
+		},
+		{
+			"name": "Get All User Chats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8008/chats/user/:username",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"chats",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": ""
+						}
+					]
+				},
+				"description": "This request returns all of the chats that the user is in. See example for sample input and values."
+			},
+			"response": [
+				{
+					"id": "af2194bb-07d4-465c-9969-572b5863ebf9",
+					"name": "Get All User Chats Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8008/chats/user/The_Bagel_Wizard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"chats",
+								"user",
+								"The_Bagel_Wizard"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "111",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Nov 2017 09:03:07 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6f-QxlH9L/LItlYNIVyJOQPNbwkjkY\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 51,
+					"body": "{\"error\":false,\"data\":[{\"user1\":\"The_Bagel_Wizard\",\"user2\":\"Abdul2048\",\"chatID\":1509699656}],\"message\":\"Chats\"}"
+				}
+			]
+		}
+	]
+}

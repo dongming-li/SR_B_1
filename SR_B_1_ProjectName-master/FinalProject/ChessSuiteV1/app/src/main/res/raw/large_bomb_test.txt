@@ -1,0 +1,10 @@
+e2
+e4
+e7
+e6
+pe5
+largeBomb
+e4
+e5
+b8
+a6

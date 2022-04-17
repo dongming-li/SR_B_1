@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="coms309.chesssuitev1.Chess_Main">
+
+    <Button
+        android:id="@+id/two_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AI_player"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="2 Players" />
+
+    <Button
+        android:id="@+id/AI_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/two_player"
+        android:layout_alignStart="@+id/two_player"
+        android:layout_centerVertical="true"
+        android:text="AI" />
+
+    <Button
+        android:id="@+id/two_player_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/two_player"
+        android:layout_alignStart="@+id/two_player"
+        android:layout_marginBottom="70dp"
+        android:text="New Game" />
+
+    <Button
+        android:id="@+id/AICreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/AI_player"
+        android:layout_alignStart="@+id/AI_player"
+        android:layout_below="@+id/AI_player"
+        android:layout_marginTop="19dp"
+        android:text="AI New Game" />
+</RelativeLayout>

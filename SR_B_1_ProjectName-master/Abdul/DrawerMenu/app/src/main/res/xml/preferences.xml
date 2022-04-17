@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="sounds_pref"
+        android:summary="Turn sounds on or off"
+        android:title="Sounds" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/boardcolors"
+            android:entryValues="@array/colorsvalues"
+            android:key="board_colors"
+            android:title="Board Colors" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notifications">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="notification_pref"
+            android:title="Chat Notifications" />
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>
